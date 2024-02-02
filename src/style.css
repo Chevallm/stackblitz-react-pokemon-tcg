@@ -6,13 +6,26 @@ body {
   margin: 0;
   padding: 1rem;
   font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  color: #fff;
+  background-color: #111;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+
+input {
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  width: 50%;
 }
 
 h1 {
   font-weight: 800;
-  font-size: 1.5rem;
 }
 
 .gallery {
@@ -20,4 +33,15 @@ h1 {
   flex-wrap: wrap;
   gap: 10px;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery .card {
+  border-radius: 4px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.gallery .card:hover {
+  transform: scale(1.05);
 }
